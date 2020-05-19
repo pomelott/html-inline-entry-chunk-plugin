@@ -31,7 +31,7 @@ If it is useful please give the star.（如果有用，请给星！ / 役立つ�
             new inlineHtmlEntryChunkPlugin(),
             new htmlWebpackPlugin({
                 entry: 'index',
-                chunk: ['runtime'] // chunk已无效
+                chunk: ['runtime'] //chunk is invalid
             })
         ]
     }
