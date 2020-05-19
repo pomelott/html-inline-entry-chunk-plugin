@@ -29,6 +29,7 @@ If it is useful please give the star.（如果有用，请给星！ / 役立つ�
         },
         plugin: [
             new inlineHtmlEntryChunkPlugin(),
+            // when useing inlineHtmlEntryChunkPlugin, the chunk param in htmlWebpackPlugin is invalid
             new htmlWebpackPlugin({
                 entry: 'index',
                 chunk: ['runtime'] //chunk is invalid
