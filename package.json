@@ -1,0 +1,25 @@
+{
+  "name": "html-inline-entry-chunk-plugin",
+  "version": "0.0.1",
+  "description": "Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pomelott/html-inline-entry-chunk-plugin.git"
+  },
+  "keywords": [
+    "html",
+    "entrychunk",
+    "inline",
+    "plugin"
+  ],
+  "author": "pomelott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pomelott/html-inline-entry-chunk-plugin/issues"
+  },
+  "homepage": "https://github.com/pomelott/html-inline-entry-chunk-plugin#readme"
+}
