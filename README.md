@@ -1,9 +1,16 @@
+
+![versioin](https://img.shields.io/badge/version-v0.0.2-blue)
+![node-versioin](https://img.shields.io/badge/node-v10.8.0-green)
+![npm-versioin](https://img.shields.io/badge/node-v6.2.0-green)
+![dependence](https://img.shields.io/badge/dependence-0-blue)
+![size](https://img.shields.io/badge/size-31%20kB-blue)
+
+
 # html-inline-entry-chunk-plugin
 
-<img src="https://img.shields.io/badge/node-v1.1.1-green">
+Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.
 
-Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies
-
+If it is useful please give the star.（如果有用，请给星！ / 役立つ場合は、星をつけてください / 유용하다면 별을주세요.）
 
 ## Download
 ```
