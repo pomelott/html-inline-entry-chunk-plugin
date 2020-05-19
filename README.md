@@ -1,4 +1,7 @@
 # html-inline-entry-chunk-plugin
+
+<img src="https://img.shields.io/badge/node-v1.1.1-green">
+
 Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies
 
 

@@ -20,8 +20,6 @@ let model = {
 
 module.exports.createTagModel = (filePath) => {
     const fileType = filePath.match(/(?:.*?\.)(\w+)(?:\?.*)?$/)[1];
-    console.log('===========')
-    console.log(fileType)
     const temp = JSON.parse(JSON.stringify(model[fileType]))
     switch (fileType) {
         case 'css':
@@ -38,7 +36,8 @@ module.exports.createTagModel = (filePath) => {
 }
 
 module.exports.mixTag = (entryModule, opt) => {
-    console.log(entryModule)
+    opt.tag.head = opt.tag.head ? opt.tag.head : [];
+    opt.tag.body = opt.tag.body ? opt.tag.body : [];
     let temp = {
         head: [],
         body: []
