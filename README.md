@@ -1,4 +1,11 @@
+
+![versioin](https://img.shields.io/badge/version-v0.0.2-blue)
+![node-versioin](https://img.shields.io/badge/node-v10.8.0-green)
+![npm-versioin](https://img.shields.io/badge/node-v6.2.0-green)
+![dependence](https://img.shields.io/badge/dependence-0-blue)
+![size](https://img.shields.io/badge/size-31%20kB-blue)
 # html-inline-entry-chunk-plugin
+
 Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies
 
 
