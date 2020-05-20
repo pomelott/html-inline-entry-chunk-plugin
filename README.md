@@ -1,16 +1,16 @@
 
 ![versioin](https://img.shields.io/badge/version-v0.0.2-blue)
+![webpack-versioin](https://img.shields.io/badge/webpack-4.0.0+-green)
 ![node-versioin](https://img.shields.io/badge/node-v10.8.0-green)
-![npm-versioin](https://img.shields.io/badge/node-v6.2.0-green)
+![npm-versioin](https://img.shields.io/badge/npm-v6.2.0-green)
 ![dependence](https://img.shields.io/badge/dependence-0-blue)
-![size](https://img.shields.io/badge/size-31%20kB-blue)
 
 
 # html-inline-entry-chunk-plugin
 
 Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.
 
-If it is useful please give the star.（如果有用，请给星！ / 役立つ場合は、星をつけてください / 유용하다면 별을주세요.）
+If it is useful please give the star on the github.（如果有用，请给星！ / 役立つ場合は、星をつけてください / 유용하다면 별을주세요.）
 
 ## Download
 ```
@@ -28,7 +28,7 @@ If it is useful please give the star.（如果有用，请给星！ / 役立つ�
             index: './src/js/index.js'
         },
         plugin: [
-            new inlineHtmlEntryChunkPlugin(),
+            new htmlInlineEntryChunkPlugin(),
             // when useing inlineHtmlEntryChunkPlugin, the chunk param in htmlWebpackPlugin is invalid
             new htmlWebpackPlugin({
                 entry: 'index',
@@ -48,11 +48,11 @@ If it is useful please give the star.（如果有用，请给星！ / 役立つ�
             list: './src/js/list.js'
         },
         plugin: [
-            new inlineHtmlEntryChunkPlugin(),
+            new htmlInlineEntryChunkPlugin(),
             new htmlWebpackPlugin({
                 entry: 'index'
             }),
-            new inlineHtmlEntryChunkPlugin(),
+            new htmlInlineEntryChunkPlugin(),
             new htmlWebpackPlugin({
                 entry: 'list'
             })
