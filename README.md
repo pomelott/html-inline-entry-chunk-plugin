@@ -8,7 +8,7 @@
 
 # html-inline-entry-chunk-plugin
 
-Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.
+When useing optimization.splitChunks, obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.
 
 If it is useful please give the star on the github.（如果有用，请给星！ / 役立つ場合は、星をつけてください / 유용하다면 별을주세요.）
 
@@ -31,8 +31,10 @@ If it is useful please give the star on the github.（如果有用，请给星�
             new htmlInlineEntryChunkPlugin(),
             // when useing inlineHtmlEntryChunkPlugin, the chunk param in htmlWebpackPlugin is invalid
             new htmlWebpackPlugin({
-                entry: 'index',
-                chunk: ['runtime'] //chunk is invalid
+                entry: 'index',  // need to be consistent with the entry name
+                title: 'test-page',
+                template: 'tpl.html',
+                chunk: ['chunkName'] //chunk is invalid
             })
         ]
     }
