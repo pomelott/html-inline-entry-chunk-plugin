@@ -82,6 +82,8 @@ If it is useful please give the star on the github.（如果有用，请给星�
                     css: 'head'
                 },
                 tagPriority: 1,
+                baseJsDir: '../',
+                baseCssDir: '//www.cdn-plugin.com/css/',
                 tag: {
                     // Control the corresponding introduction order according to the position in the array
                     head: [
