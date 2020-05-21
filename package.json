@@ -1,6 +1,6 @@
 {
   "name": "html-inline-entry-chunk-plugin",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.",
   "main": "index.js",
   "scripts": {

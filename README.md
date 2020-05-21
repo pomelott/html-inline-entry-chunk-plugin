@@ -1,9 +1,8 @@
 
-![versioin](https://img.shields.io/badge/version-v0.0.2-blue)
 ![webpack-versioin](https://img.shields.io/badge/webpack-4.0.0+-green)
 ![node-versioin](https://img.shields.io/badge/node-v10.8.0-green)
 ![npm-versioin](https://img.shields.io/badge/npm-v6.2.0-green)
-![dependence](https://img.shields.io/badge/dependence-0-blue)
+![dependence](https://img.shields.io/badge/dependence-1-blue)
 
 
 # html-inline-entry-chunk-plugin
@@ -83,7 +82,7 @@ If it is useful please give the star on the github.（如果有用，请给星�
                     js: 'body',
                     css: 'head'
                 },
-                tagPriority: 1,
+                tagPriority: 1,  // 1: inline custom tag first   0: inline chunk file first
                 baseJsDir: '../',
                 baseCssDir: '//www.cdn-plugin.com/css/',
                 tag: {
