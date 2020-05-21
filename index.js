@@ -10,7 +10,9 @@ class htmlInlineEntryChunkPlugin {
           css: 'head'
         },
         tag: {},
-        tagPriority: 0
+        tagPriority: 0,
+        baseCssDir: '',
+        baseJsDir: ''
       }
       this.init(opt)
     }
@@ -30,7 +32,7 @@ class htmlInlineEntryChunkPlugin {
           let mixModule = mixTag(entryModule, this.opt);
           for (let pos in mixModule) {
             mixModule[pos].forEach((fileItem) => {
-                let tagModel = createTagModel(fileItem);
+                let tagModel = createTagModel(fileItem, this.opt);
                 pluginArgs[pos].push(tagModel);
             })
           }

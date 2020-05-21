@@ -1,3 +1,4 @@
+const {join} = require('path');
 let model = {
     js: {
         tagName: 'script',
@@ -18,15 +19,15 @@ let model = {
     }
 }
 
-module.exports.createTagModel = (filePath) => {
+module.exports.createTagModel = (filePath, opt) => {
     const fileType = filePath.match(/(?:.*?\.)(\w+)(?:\?.*)?$/)[1];
     const temp = JSON.parse(JSON.stringify(model[fileType]))
     switch (fileType) {
         case 'css':
-            temp.attributes.href = filePath;
+            temp.attributes.href = join(opt.baseCssDir, filePath);
             break;
         case 'js':
-            temp.attributes.src = filePath;
+            temp.attributes.src = join(opt.baseJsDir, filePath);
             break;
         default:
             temp = {};

@@ -67,6 +67,8 @@ If it is useful please give the star on the github.（如果有用，请给星�
 | inject | {Object} | {css: 'head', js: 'body'} | control the assets of position in HTML|
 | tag | {Object} | {} | Add additional resource tags |
 | tagPriority | {Number} | 0 | Control the insertion order of entry chunk and other tags |
+| baseJsDir | {String} | '' | Control the prefix of script tags in html |
+| baseCssDir | {String} | '' | Control the prefix of link tags in html |
 
 
 ## Example
@@ -81,6 +83,7 @@ If it is useful please give the star on the github.（如果有用，请给星�
                 },
                 tagPriority: 1,
                 tag: {
+                    // Control the corresponding introduction order according to the position in the array
                     head: [
                         'https://cdn.bootcdn.net/ajax/libs/basscss/8.1.0/css/basscss-cp.css',
                         'https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js'
