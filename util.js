@@ -1,4 +1,5 @@
 const {join} = require('path');
+var validUrl = require('valid-url');
 let model = {
     js: {
         tagName: 'script',
@@ -24,10 +25,20 @@ module.exports.createTagModel = (filePath, opt) => {
     const temp = JSON.parse(JSON.stringify(model[fileType]))
     switch (fileType) {
         case 'css':
-            temp.attributes.href = join(opt.baseCssDir, filePath);
+            if (validUrl.isWebUri(opt.baseCssDir)) {
+                temp.attributes.href = opt.baseCssDir + filePath;
+            } else {
+                temp.attributes.href = join(opt.baseCssDir, filePath);
+            }
+            
             break;
         case 'js':
-            temp.attributes.src = join(opt.baseJsDir, filePath);
+            if (validUrl.isWebUri(opt.baseJsDir)) {
+                temp.attributes.src = opt.baseJsDir + filePath;
+            }  else {
+                temp.attributes.src = join(opt.baseJsDir, filePath);
+            }
+            
             break;
         default:
             temp = {};

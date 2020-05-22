@@ -2,7 +2,6 @@
 ![webpack-versioin](https://img.shields.io/badge/webpack-4.0.0+-green)
 ![node-versioin](https://img.shields.io/badge/node-v10.8.0-green)
 ![npm-versioin](https://img.shields.io/badge/npm-v6.2.0-green)
-![dependence](https://img.shields.io/badge/dependence-1-blue)
 
 
 # html-inline-entry-chunk-plugin
