@@ -2,9 +2,12 @@
 ![webpack-versioin](https://img.shields.io/badge/webpack-4.0.0+-green)
 ![node-versioin](https://img.shields.io/badge/node-v10.8.0-green)
 ![npm-versioin](https://img.shields.io/badge/npm-v6.2.0-green)
+![html-webpack-plugin](https://img.shields.io/badge/html--webpack--plugin-v4.3.0-blue)
 
 
 # html-inline-entry-chunk-plugin
+
+*notice: use this with html-webpack-plugin*
 
 When useing optimization.splitChunks, obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.
 

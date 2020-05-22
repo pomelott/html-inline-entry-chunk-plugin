@@ -1,6 +1,6 @@
 {
   "name": "html-inline-entry-chunk-plugin",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "description": "Obtain all dependent files according to the entrance and synthesize HTML files according to the dependencies.",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/pomelott/html-inline-entry-chunk-plugin#readme",
   "dependencies": {
+    "html-webpack-plugin": "^4.3.0",
     "valid-url": "^1.0.9"
   }
 }

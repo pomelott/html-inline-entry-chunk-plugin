@@ -3,7 +3,7 @@ var validUrl = require('valid-url');
 let model = {
     js: {
         tagName: 'script',
-        closeTag: true,
+        voidTag: false,
         attributes: {
             type: 'text/javascript',
             src: ''
@@ -11,7 +11,7 @@ let model = {
     },
     css: {
         tagName: 'link',
-        closeTag: false,
+        voidTag: true,
         attributes: {
             type: 'text/css',
             rel: "stylesheet",
@@ -30,7 +30,6 @@ module.exports.createTagModel = (filePath, opt) => {
             } else {
                 temp.attributes.href = join(opt.baseCssDir, filePath);
             }
-            
             break;
         case 'js':
             if (validUrl.isWebUri(opt.baseJsDir)) {
