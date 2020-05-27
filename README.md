@@ -4,6 +4,8 @@
 ![npm-versioin](https://img.shields.io/badge/npm-v6.2.0-green)
 ![html-webpack-plugin](https://img.shields.io/badge/html--webpack--plugin-v4.3.0-blue)
 
+<img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
+
 
 # html-inline-entry-chunk-plugin
 
