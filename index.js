@@ -2,6 +2,7 @@
 const getRuntimeChunk = require('./getEntryChunk');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {createTagModel, mixTag} = require('./util')
+const _ = require('lodash');
 class htmlInlineEntryChunkPlugin {
     constructor (opt) {
       this.name = 'htmlInlineEntryChunkPlugin';
@@ -20,7 +21,7 @@ class htmlInlineEntryChunkPlugin {
 
 
     init (opt) {
-      this.opt = Object.assign(this.opt, opt)
+      this.opt = _.merge(this.opt, opt)
     }
 
     apply (compiler) {
